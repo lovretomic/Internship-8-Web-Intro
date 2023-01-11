@@ -59,3 +59,7 @@ main {
 p {
     line-height: 24px;
 }
+
+code {
+    font-size: 16px;
+}

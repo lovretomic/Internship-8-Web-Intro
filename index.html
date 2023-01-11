@@ -10,12 +10,17 @@
   <body>
     <header>
       <h1>
-        <a href="" class="hidden-link">neugierig.org</a>:
-        <a href="" class="hidden-link">Tech Notes</a>
+        <a href="https://neugierig.org/" class="hidden-link">neugierig.org</a>:
+        <a href="https://neugierig.org/software/blog/" class="hidden-link"
+          >Tech Notes</a
+        >
       </h1>
       <p id="subtitle">
         You're reading a single entry. Go
-        <a href="">back to the front page</a> for more.
+        <a href="https://neugierig.org/software/blog/"
+          >back to the front page</a
+        >
+        for more.
       </p>
     </header>
     <main>
@@ -26,14 +31,17 @@
       <p>
         You might be surprised, as I was, to learn that Chrome exposes an API to
         notify you when the browser crashes on your page. It is part of a larger
-        reporting API that is designed to give browsers a channel to inform you,
-        the developer, of crashes and other things.
+        <a href="https://devdocs.io/dom/reporting_api">reporting API</a> that is
+        designed to give browsers a channel to inform you, the developer, of
+        crashes and other things.
       </p>
       <p>
         In particular for a page crash you no longer have a page or JS context
         to receive the event, so the API instead POSTs some JSON to a URL you
-        provide. Per usual there were two slightly incompatible versions of the
-        API, I imagine as they attempted to standardize. (I do not know a lot
+        provide. Per usual there were
+        <a href="https://developer.chrome.com/blog/reporting-api-migration/"
+          >two slightly incompatible versions of the API</a
+        >, I imagine as they attempted to standardize. (I do not know a lot
         about this space but it appears all of this is Chrome-only for now…)
       </p>
       <p>
@@ -62,8 +70,12 @@
       <p>
         From this I took away an important lesson: even when your app is not
         pushing the boundaries of browsers, monitoring for crashes is probably
-        worth it. Read this overview to get started; I believe it's as simple as
-        providing a default endpoint in an HTTP header and accepting POSTs
+        worth it.
+        <a href="https://developer.chrome.com/articles/reporting-api/"
+          >Read this overview</a
+        >
+        to get started; I believe it's as simple as providing a
+        <code>default</code> endpoint in an HTTP header and accepting POSTs
         there.
       </p>
     </main>
