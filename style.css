@@ -17,20 +17,45 @@ header {
     padding-left: 85px;
 }
 
-h1, p {
+#subtitle, .date {
     margin: 0;
 }
 
-header h1 {
+h1, h2 {
+    margin: 0;
     font-weight: 100;
 }
 
-header h1 .hiddenlink {
+a {
+    color: #37f;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+header h1 .hidden-link,
+main h2 .hidden-link {
     color: black;
     text-decoration: none;
     transition: 0.1s;
 }
 
-header h1 .hiddenlink:hover {
-    color: blue;
+header h1 .hidden-link:hover,
+main h2 .hidden-link:hover {
+    color: #37f;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 18px 85px;
+    width: 685px;
+}
+
+.date {
+    color: #555;
+}
+
+p {
+    line-height: 24px;
 }
